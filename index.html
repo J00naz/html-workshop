@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">    <!-- Tähestik, mida kasutame  -->
     <link rel="stylesheet" type="text/css" href="style.css"/> <!-- Ühendus CSS-i ja meie lehe vahel -->
-    <title>Minu veebileht</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
+    <title>Capibarad</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
 </head>
 
 <body>
@@ -12,12 +12,10 @@
 
 <div class="container" style="padding: 1em">
     <div id="textBox">
-        <h1>Nimetus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur eget lectus mi. Donec lorem magna,
-            elementum ac dui in, posuere pharetra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur eget lectus mi. Donec lorem magna, elementum ac dui in, posuere pharetra odio.</p>
+        <h1>Capibarad</h1>
+        <p>Capibarad on väga chillid loomad. Väga lahedad loomad!</p>
     </div>
-    <img id="photo" src="images/img.png">
+    <img id="photo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqrNyWYk0qIECqVWOOF_E-NbiJ8DcfLt0ixirzo69apoj-JqTB">
 </div>
 
 <!-- Lõbusad faktid -->
@@ -25,40 +23,70 @@
 <div class="container">
     <div class="card">
         <!-- Tee see osa ise! -->
-        <img class="icon" src="images/question.png"/>
-        <h1>Kas teadsid, et </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a odio vel lorem congue
-            facilisis.</p>
+        <img class="icon" src="https://haldus.taltech.ee/sites/default/files/styles/teaduskonnad_department_desktop/public/news-image/Ago%20Luberg.jpg.webp?itok=chBvbykr"/>
+        <h1>Chill 100</h1>
+        <p>Kas teadsid, et Capibarad on nii chillid loomad, et nad ignoreerivad teisi loomi, kes neid tüütavad.</p>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
+        <img class="icon" src="https://external-preview.redd.it/tYop8b1I2rnM8lNwFdrfw33XMG3PsnUsjO8z6P23UE8.png?format=pjpg&auto=webp&s=7fa75c25aa4ff9615159b42eac8c88a96e8cc822"/>
+        <h1>Eluiga</h1>
+        <p>Kapibaarade maksimaalne eluiga looduses on kuni seitse eluaastat. Nende eluiga kinnistes tingimustes (loomaaias või koduloomadena) võib ulatuda kuni 12 eluaastani.</p>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
+
+        <button id="coolbutton">Kasutus</button>
+
+        <p id="hiddentext"><img class="icon" src="https://images.squarespace-cdn.com/content/v1/57852f78b8a79b20f43c23e4/1674876105371-GW324V6A7OACHGKQ8VH5/PM2964-C-CapyRectBagRear.jpg?format=1500w/"></p>
+
+        <script>
+        // You can also "listen" for when a "click" event happens
+        // on a certain element, and then run your scripts!
+
+        document.getElementById("coolbutton").addEventListener("click", doSomething)
+        // Notice the lack of (parenthesises) after the function name!
+
+        function doSomething() {
+            document.getElementById("hiddentext").innerHTML = "Kas teadsid, et Capibarad on nii chillid loomad, et neid on lihtne püüda :). -Famous last words.";
+        }
+        </script>
     </div>
 </div>
 
 <!-- Video -->
 
 <div class="container" style="flex-flow: column">
-    <iframe id="video" src="https://www.youtube.com/embed/WLT7TDGzXGU?si=z5_UTSHfVFkCDm6X" title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OOIiaCu8C4Q?si=MW_3AHShfaK12CTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <!-- max-width paneb ette piiri, et kui pikk võib tekst olla -->
-    <p style="max-width: 55em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a odio vel lorem congue
-        facilisis. Praesent consequat leo arcu, in gravida erat fringilla in. Pellentesque dictum accumsan leo, in
-        consectetur eros malesuada quis. Ut congue turpis eget interdum egestas. </p>
+    <p style="max-width: 55em">Siin on video kapibaarade eepilisest võitlusest! </p>
 </div>
 
 <!-- Lisainfo -->
 
 <div>
     <h1>Lisainfo</h1>
-    <div class="container">
-        <!-- Tee see osa ise! -->
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Vaata kõige nunnum video üldse!!!</a>
+    <br>
+    <br>
+    <button id="coolbutton2">Cuteness overload!!!</button>
+
+    <p id="hiddentext2"><img class="icon" src="https://soranews24.com/wp-content/uploads/sites/3/2014/04/cb-1.png"></p>
+
+    <script>
+    // You can also "listen" for when a "click" event happens
+    // on a certain element, and then run your scripts!
+
+    document.getElementById("coolbutton2").addEventListener("click", doSomething)
+    // Notice the lack of (parenthesises) after the function name!
+
+    function doSomething() {
+        document.getElementById("hiddentext2").innerHTML = "Wow";
+    }
+    </script>
     </div>
 </div>
-
 </body>
 
 </html>
